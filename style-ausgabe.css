@@ -1,0 +1,230 @@
+#body-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
+}
+
+.dialog {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+ 
+
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease-in-out;
+}
+
+#body-overlay.sichtbar, .dialog.sichtbar {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#loslegen-dialog {
+    width: 55%;
+}
+
+.dialog-schliessen-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 32px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+
+#loslegen-dialog {
+    background-color: #80b3c7;
+    box-shadow: inset 0px 0px 10px black, 2px 2px 4px rgba(255, 255, 255, 0.1), 8px 8px 16px rgba(255, 255, 255, 0.1);
+    border: 5px solid silver;
+}
+
+#loslegen-dialog .dialog-schliessen-button {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#loslegen-dialog form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loslegen-dialog h3 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: max(2.5vw, 2.1em);
+    text-shadow: 0px 0px 4px black;
+}
+
+#loslegen-dialog input {
+    width: 100%;
+    margin: 7px 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    vertical-align: middle;
+}
+
+#loslegen-dialog .eingabefeld {
+    padding: 14px 16px;
+    font-size: 17px;
+    line-height: 16px;
+    background: #f5f6f7;
+    border: 2px solid silver;
+    color: #1c1e21;
+    height: 50px;
+    box-shadow: inset 0px 0px 4px #222;
+}
+
+#loslegen-dialog .eingabefeld:focus-visible {
+    outline: none;
+    border: 2px solid #3a342c;
+}
+
+#loslegen-dialog input[type=submit] {
+    padding: 0 16px;
+    border: none;
+    font-size: 25px;
+    color: white;
+    line-height: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    background-image: linear-gradient(#d3cdc5, #3a342c);
+    text-decoration: none;
+    text-shadow: 1px 1px 5px black;
+    box-shadow: inset 0px 0px 10px black;
+    border-radius: 10%/50%;
+    width: 50%;
+    display: inline-block;
+}
+
+#loslegen-dialog input[type=submit]:hover {
+    box-shadow: inset 0px 0px 10px black, 0px 0px 15px #d3cdc5;
+}
+
+
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 9000px;
+    max-width: 95%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 3.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+.dercontainer {
+    position: relative;
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    }
+
+.centered {
+    font-size: 70%;
+    position: absolute;
+    top: 20.7%;
+    left: 49%;
+    transform: translate(-48%, -52%);
+    }
+
+  
+
+
+
+
+
+
+
+
+
+
